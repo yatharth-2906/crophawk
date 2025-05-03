@@ -32,12 +32,14 @@ export function UserProvider({ children }) {
 
     const token = useToken();
 
+    const backend_url = import.meta.env.VITE_BACKEND_URL;
+
     useEffect(() => {
         async function fetchUser() {
             if (!token) return;
 
             try {
-                const response = await fetch(`http://localhost:8000/user/login?token=${token}`);
+                const response = await fetch(`${backend_url}/user/login?token=${token}`);
                 const data = await response.json();
                 if (response.ok) {
                     setUser(data);
@@ -58,7 +60,7 @@ export function UserProvider({ children }) {
     
 
     return (
-        <UserContext.Provider value={{ user, setUser, handleLogout }}>
+        <UserContext.Provider value={{ user, setUser, handleLogout, backend_url }}>
             {children}
         </UserContext.Provider>
     );

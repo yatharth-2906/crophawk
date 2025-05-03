@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
 
 function LoginPage(){
-    const { user } = useContextUser();
+    const { user, backend_url } = useContextUser();
 
     if(user != null)
         window.location.href = "/";
@@ -14,7 +14,7 @@ function LoginPage(){
         const password = document.getElementById('password').value;
 
         try{
-            const response = await fetch(`http://localhost:8000/user/login`,{
+            const response = await fetch(`${backend_url}/user/login`,{
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({email_id, password})

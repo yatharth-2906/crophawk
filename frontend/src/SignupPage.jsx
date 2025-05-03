@@ -3,7 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
 
 function SignupPage(){
-    const { user } = useContextUser();
+    const { user, backend_url } = useContextUser();
 
     if(user != null)
         window.location.href = "/";
@@ -18,7 +18,7 @@ function SignupPage(){
             return alert("Please Check Our Terms & Conditions.");
     
         try{
-            const response = await fetch(`http://localhost:8000/user/`,{
+            const response = await fetch(`${backend_url}/user/`,{
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({name, email_id, password})
