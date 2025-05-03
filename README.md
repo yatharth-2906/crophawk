@@ -41,5 +41,10 @@ JWT_SECRET="your-secret-key"
 DB_URL="mongodb://127.0.0.1:27017/crophawk"
 ```
 
+### 2️⃣ Create a `.env` file in the frontend directory and add:
+```
+VITE_BACKEND_URL='http://localhost:8000'
+```
+
 ## 📞 Contact
 For any issues, reach out at [yatharth2906@gmail.com] or open an issue on GitHub.
