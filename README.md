@@ -4,7 +4,7 @@ CropHawk is an innovative web application designed to help farmers optimize thei
 ## 🎯 Features
 - **Fertilizer Recommendation**: Personalized fertilizer suggestions based on soil health and crop type.
 - **Crop Recommendation**: Personalized crop suggestions based on crop type and other agricultural factors.
-- **Yield Prediction**: Predicts crop yield based on historical data and agricultural factors to support efficient planning.
+- **Yield Prediction**: Predicts crop yield based on agricultural factors to support efficient planning and strategy.
 
 ## 🛠️ Tech Stack
 - **Frontend**: React.js, HTML/CSS
