@@ -481,12 +481,5 @@
     "client_url": "http://localhost:5173/",
     "server_url": "/user/login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDQwODkzNzMyNzljYWM1NzAyZGJmZCIsIm5hbWUiOiJZYXRoYXJ0aCIsImVtYWlsIjoiMjExNDYxQGp1aXRzb2xhbi5pbiIsImlhdCI6MTc0NjQzNTM4OH0.dUmcKfisufrJC3NkBFXMaBRTItgwsN0uIfdJyG3-yVE",
     "timestamp": "2025-05-06T09:43:28.640Z"
-  },
-  {
-    "index": 70,
-    "client_ip": "::1",
-    "client_url": "http://localhost:5173/",
-    "server_url": "/user/login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDQwODkzNzMyNzljYWM1NzAyZGJmZCIsIm5hbWUiOiJZYXRoYXJ0aCIsImVtYWlsIjoiMjExNDYxQGp1aXRzb2xhbi5pbiIsImlhdCI6MTc0NjQzNTM4OH0.dUmcKfisufrJC3NkBFXMaBRTItgwsN0uIfdJyG3-yVE",
-    "timestamp": "2025-05-06T09:43:28.682Z"
   }
 ]
