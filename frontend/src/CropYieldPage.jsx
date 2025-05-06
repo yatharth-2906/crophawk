@@ -2,13 +2,20 @@ import { useState } from "react";
 import Cookies from "js-cookie";
 import ShowRecc from "./ShowRecc";
 import styles from "./Recommendations.module.css";
-import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function FertRecPage() {
     const token = Cookies.get('token');
 
-    if (!token)
-        window.location.replace('/login');
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = Cookies.get('token');
+        if (!token) {
+            navigate('/login', { replace: true });
+        }
+    }, []);
 
     const [getFert, setFert] = useState(null);
     const [loading, setLoading] = useState(false);
