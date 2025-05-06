@@ -31,7 +31,7 @@ function Footter(){
         <div className="footer_rem">
             <div className="copyright">© {year} CropHawk. All rights reserved.</div>
             <div className="policies">
-                <Link to="https://github.com/yatharth-2906/crophawk-api" target="__blank" rel="noopener noreferrer">Made with ❤️ by CropHawk Team</Link>
+                <Link to="https://github.com/yatharth-2906/crophawk" target="__blank" rel="noopener noreferrer">Made with ❤️ by CropHawk Team</Link>
             </div>
         </div>
     </div>
