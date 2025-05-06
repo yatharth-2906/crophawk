@@ -19,8 +19,7 @@ const corsOptions = {
   origin: function (origin, callback) {
     callback(null, true);
   },
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
 };
 
 app.use(cors(corsOptions));
