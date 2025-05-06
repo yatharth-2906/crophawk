@@ -926,7 +926,7 @@ function FertRecPage() {
                     {error && <div className={styles.error}>{error}</div>}
                     {loading && <div className={`${styles.loading_spinner_box} ${styles.show_recc_container}`}
                     > <div className={`${styles.spinner_roller} ${styles.show_recc_container}`}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> </div>}
-                    {!loading && getFert && <ShowRecc type="Predicted" thing="Yield" getFert={getFert} />}
+                    {!loading && getFert && <ShowRecc type="Predicted" thing="Yield (in ton)" getFert={getFert} />}
                 </div>
             </div >
         </>
