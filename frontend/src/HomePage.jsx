@@ -119,7 +119,7 @@ function HomePage(){
 
         <section className="services">
                 <div className="services_element">
-                    <img className="services_img" src="./src/assets/box_3d.svg" alt="" />
+                    <img className="services_img" src="box_3d.svg" alt="" />
 
                     <div className="services_head">Data-Driven Insights for Optimal Crop Management</div>
 
@@ -129,7 +129,7 @@ function HomePage(){
                 <br /><br />
 
                 <div className="services_element">
-                    <img className=" services_img" src="./src/assets/box_3d.svg" alt="" />
+                    <img className=" services_img" src="box_3d.svg" alt="" />
 
                     <div className="services_head">Efficient Recommendation for Maximum Yield</div>
 
@@ -139,7 +139,7 @@ function HomePage(){
                 <br /><br />
 
                 <div className="services_element">
-                    <img className=" services_img" src="./src/assets/box_3d.svg" alt="" />
+                    <img className=" services_img" src="box_3d.svg" alt="" />
 
                     <div className="services_head">AI-Powered Yield Prediction for Smarter Farming</div>
 

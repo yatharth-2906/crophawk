@@ -60,9 +60,9 @@ function News() {
         <div className={styles.news_box} style={{ width: '18rem' }} key={index}>
           <div className={styles.news_image_container}>
             <img 
-              src={article.urlToImage || "./src/assets/default_news_img.jpg"} 
+              src={article.urlToImage || "default_news_img.jpg"} 
               className={styles.news_image} 
-              onError={(e) => e.target.src = "./src/assets/default_news_img.jpg"}
+              onError={(e) => e.target.src = "default_news_img.jpg"}
               alt={article.title || "News image"}
             />
           </div>
