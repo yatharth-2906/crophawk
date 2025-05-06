@@ -1,9 +1,10 @@
 # 🌾 CropHawk
-CropHawk is an innovative web application designed to help farmers optimize their agricultural practices. Built with the MERN stack, it integrates machine learning models to provide the services like fertilizer recommendations and crop recommendations. CropHawk aims to enhance agricultural productivity by providing data-driven insights, enabling better decision-making for sustainable farming.
+CropHawk is an innovative web application designed to help farmers optimize their agricultural practices. Built with the MERN stack, it integrates machine learning models to provide the services like fertilizer recommendations, crop recommendations and yield predictiins. CropHawk aims to enhance agricultural productivity by providing data-driven insights, enabling better decision-making for sustainable farming.
 
 ## 🎯 Features
 - **Fertilizer Recommendation**: Personalized fertilizer suggestions based on soil health and crop type.
-- **Crop Recommendation**: Personalized crop suggestions based on soil health and crop type and other agricultural factors.
+- **Crop Recommendation**: Personalized crop suggestions based on crop type and other agricultural factors.
+- **Yield Prediction**: Predicts crop yield based on agricultural factors to support efficient planning and strategy.
 
 ## 🛠️ Tech Stack
 - **Frontend**: React.js, HTML/CSS
@@ -38,7 +39,7 @@ npm run dev
 PORT=8000
 SALT_ROUNDS=10
 JWT_SECRET="your-secret-key"
-DB_URL="mongodb://127.0.0.1:27017/crophawk"
+DB_ONLINE="mongodb://127.0.0.1:27017/crophawk"
 ```
 
 ### 2️⃣ Create a `.env` file in the frontend directory and add:
