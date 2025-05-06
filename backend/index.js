@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 
 const staticRouter = require('./routes/static')
 const userRouter = require('./routes/user');
+const newsRouter = require('./routes/news');
 
 const app = express();
 const PORT = parseInt(process.env.PORT);
@@ -21,6 +22,7 @@ app.use(express.urlencoded({extended:false}));
 
 app.use('/', staticRouter)
 app.use('/user', userRouter);
+app.use('/news', newsRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}....`);

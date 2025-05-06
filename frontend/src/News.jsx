@@ -1,9 +1,11 @@
 import styles from './News.module.css';
 import { useState, useEffect } from "react";
+import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
 
 function News() {
-  const news_api_key = "fca1066e3f0c410b8801a5b2e270d0b3";
-  const news_api = `https://newsapi.org/v2/everything?q=farming&sortBy=popularity&pageSize=93&apiKey=${news_api_key}`;
+  const { backend_url } = useContextUser();
+  
+  const news_api = `${backend_url}/news`;
 
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -12,18 +14,14 @@ function News() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch(news_api, {
-          headers: {
-            // NewsAPI v2 requires this header
-            'X-Api-Key': news_api_key
-          }
-        });
+        const response = await fetch(news_api);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         
         const data = await response.json();
+        console.log(data);
         setNews(data.articles || []);
       } catch (error) {
         console.error("Error fetching news:", error);

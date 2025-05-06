@@ -2,7 +2,7 @@ require('dotenv').config({ path: './.env' });
 const mongoose = require('mongoose');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const mongodb_url = String(process.env.DB_ONLINE);
+const mongodb_url = String(process.env.DB_URL);
 
 async function connectToMongoDB() {
     try {
