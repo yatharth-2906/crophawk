@@ -15,6 +15,11 @@ const PORT = parseInt(process.env.PORT);
 
 connectToMongoDB();
 
+const allowedOrigins = [
+  'https://crophawk-app.vercel.app',
+  'http://localhost:5173'
+];
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -23,7 +28,7 @@ const corsOptions = {
       callback(new Error('Not allowed by CORS'));
     }
   },
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
 };
 
 app.use(cors(corsOptions));
