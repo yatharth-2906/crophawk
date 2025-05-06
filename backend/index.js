@@ -16,7 +16,7 @@ const PORT = parseInt(process.env.PORT);
 connectToMongoDB();
 
 app.use(cors());
-app.use(logger);
+// app.use(logger);
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));

@@ -7,6 +7,7 @@ import LoginPage from './LoginPage'
 import SignupPage from './SignupPage'
 import FertRecPage from './FertRecPage'
 import CropRecPage from './CropRecPage'
+import CropYieldPage from './CropYieldPage'
 import { UserProvider } from './CONTEXT_PROVIDERS/UserProvider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
   { path: "/", element: <> <Headder/> <HomePage /> <Footter/> </> },
   { path: "/news", element: <> <Headder/> <News /> <Footter/> </> },
   { path: "/fertilizer_recommendation", element: <> <Headder/> <FertRecPage /> <Footter/> </> },
-  { path: "/crop_recommendation", element: <> <Headder/> <CropRecPage /> <Footter/> </> }
+  { path: "/crop_recommendation", element: <> <Headder/> <CropRecPage /> <Footter/> </> },
+  { path: "/yield_prediction", element: <> <Headder/> <CropYieldPage /> <Footter/> </> }
 ]);
 
 function App() {

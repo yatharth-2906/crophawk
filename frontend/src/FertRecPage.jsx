@@ -73,7 +73,7 @@ function FertRecPage() {
             <div className={styles.recc_body}>
                 <div className={styles.recc_content}>
                     <br />
-                    <center><h1>Fertilizer Recommendation For Crops</h1></center>
+                    <center><h1>Fertilizer Recommendation</h1></center>
                     <br />
 
                     {/* Input fields */}
