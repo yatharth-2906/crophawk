@@ -1,4 +1,3 @@
-import { FcGoogle } from "react-icons/fc";
 import styles from './Auth.module.css';
 import Cookies from "js-cookie";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";

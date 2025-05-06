@@ -1,5 +1,4 @@
 import styles from './Auth.module.css';
-import { FcGoogle } from "react-icons/fc";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
 
 function SignupPage(){

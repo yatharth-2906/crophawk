@@ -31,7 +31,7 @@ body{
   justify-content: center;
   align-items: center;
 
-  background: url('./src/assets/login_bg_black.jpeg');
+  background: url('login_bg_black.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,12 +52,6 @@ body{
 .button:hover{
   color: #222;
   background: var(--white);
-}
-
-/* fonts */
-@font-face {
-  font-family: 'Rubik Regular';
-  src: url("./src/assets/fonts/Rubik-Regular.ttf") format("ttf"),
 }
 
 h1,h2,h3,h4{
@@ -200,7 +194,7 @@ input[type='text'], input[type='email'], textarea, input[type='password']{
     align-items: center;
     border-radius: 8px; 
 
-    background: url('./src/assets/login-bg-copy.jpeg');
+    background: url('login-bg-copy.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
