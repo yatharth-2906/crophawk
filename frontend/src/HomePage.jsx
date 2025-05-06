@@ -12,7 +12,7 @@ function HomePage(){
 
     return <>
     <main>
-        <img id="brand_desc" className="brand_img" src="./src/assets/home_bg.jpg" alt="Brand Image" />
+        <img id="brand_desc" className="brand_img" src="home_bg.jpg" alt="Brand Image" />
         <section className="brand_desc">
             <div className="brand_desc_heading">
                 <h1 id="brand_heead">Revolutionizing Agriculture with AI-Driven Smart Solutions</h1>
@@ -55,7 +55,7 @@ function HomePage(){
             </div>
             
             <div className="soil_health_img_container">
-                <img className="soil_health_img" src="./src/assets/soil_health.jpg" alt="Soil health Image" />
+                <img className="soil_health_img" src="soil_health.jpg" alt="Soil health Image" />
             </div>
         </section>
 
@@ -78,7 +78,7 @@ function HomePage(){
             </div>
             
             <div className="soil_health_img_container">
-                <img className="soil_health_img" src="./src/assets/fertilizer_recommendation.jpg" alt="Soil health Image" />
+                <img className="soil_health_img" src="fertilizer_recommendation.jpg" alt="Soil health Image" />
             </div>
         </section>
 
@@ -101,7 +101,7 @@ function HomePage(){
             </div>
             
             <div className="soil_health_img_container">
-                <img className="soil_health_img" src="./src/assets/efficient_spraying.jpg" alt="Soil health Image" />
+                <img className="soil_health_img" src="efficient_spraying.jpg" alt="Soil health Image" />
             </div>
         </section>
 
