@@ -15,14 +15,14 @@ function HomePage(){
         <img id="brand_desc" className="brand_img" src="home_bg.jpg" alt="Brand Image" />
         <section className="brand_desc">
             <div className="brand_desc_heading">
-                <h1 id="brand_heead">Revolutionizing Agriculture with AI-Driven Smart Solutions</h1>
+                <h1 id="brand_heead">Revolutionizing Agriculture with AI Driven Smart Solutions</h1>
             </div>
 
             <div className="brand_para">
                 <div className="brand_para1">CropHawk leverages edge cutting AI driven technology to tackle agricultural challenges, offering smart solutions for crop recommendation, yield prediction and precision farming insights.</div>
 
                 <div className="brand_para2">
-                    <a className="learn_more_btn btn_transition" href="#">Learn More</a>
+                    <a className="learn_more_btn_contrast btn_transition" href="#">Learn More</a>
                     {!user ? <Link className="sign_up_btn btn_transition" to="/login">Login</Link> : <button className="sign_up_btn btn_transition sign_out" onClick={handleLogout}>Sign Out</button> }
                 </div>
             </div>
@@ -109,10 +109,10 @@ function HomePage(){
 
         <section className="rev" id="rev">
             <div>
-                <h1 className="rev_heading">Transforming Agriculture Through Drone Technology</h1>
+                <h1 className="rev_heading">Transforming Agriculture Through Advanced Technology</h1>
             </div>
 
-            <p className="rev_para">CropHawk's services begin with the deployment of advanced drones equipped with cutting edge sensors. These drones collect data on soil health, crop growth, and other vital parameters.</p>
+            <p className="rev_para">CropHawk's services begin with the development and deployment of cutting edge technologies that collect data on crop growth and other vital parameters.</p>
         </section>
 
         <br /><br /><br /><br />
@@ -148,7 +148,7 @@ function HomePage(){
         </section>
 
         <div className="brand_para2">
-            <Link className="learn_more_btn btn_transition" to="/learn_more">Learn More</Link>
+            <Link className="learn_more_btn_contrast btn_transition" to="/learn_more">Learn More</Link>
             {!user ? <Link className="sign_up_btn btn_transition" to="/login">Login</Link> : <button className="sign_up_btn btn_transition sign_out" onClick={handleLogout}>Sign Out</button> }
         </div>
 
