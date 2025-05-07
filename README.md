@@ -1,5 +1,5 @@
 # 🌾 CropHawk
-CropHawk is an innovative web application designed to help farmers optimize their agricultural practices. Built with the MERN stack, it integrates machine learning models to provide the services like fertilizer recommendations, crop recommendations and yield predictions. CropHawk aims to enhance agricultural productivity by providing data-driven insights, enabling better decision-making for sustainable farming.
+CropHawk is an innovative web application designed to help farmers optimize their agricultural practices. Built with the MERN stack, it integrates machine learning models to provide the services like fertilizer recommendations, crop recommendations and yield predictions. CropHawk aims to enhance agricultural productivity by providing data driven insights, enabling better decision making for sustainable farming.
 
 ## 🎯 Features
 - **Fertilizer Recommendation**: Personalized fertilizer suggestions based on soil health and crop type.
