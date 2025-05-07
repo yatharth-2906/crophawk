@@ -41,7 +41,7 @@ function LoginPage(){
         <div className={styles.login_img}>
         </div>  
         <div className={styles.form_container}>
-            <form id={styles.login_form}>
+            <form className={styles.login_form}>
                 <h1 className={styles.form_heading}>Welcome Back</h1>
                 <p className={styles.form_para}>Enter Your Credentials To Login</p>
 

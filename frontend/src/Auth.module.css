@@ -3,6 +3,19 @@ body{
   /* overflow-x: hidden; */
 }
 
+.inputt_container {
+  width: 100%;
+  text-align: center;
+  height: 3em;
+}
+
+.inputt {
+  width: 80%;
+  height: 100%;
+  border: 2px solid black;
+  /* border-radius: 10px; */
+}
+
 .form_heading {
   text-align: center;
   color: black;
@@ -86,7 +99,7 @@ p,a,li{
     background-color: rgb(215, 255, 243);
 }
 
-#login_form{
+.login_form{
     height: 100%;
     display: flex;
     flex-direction: column;
