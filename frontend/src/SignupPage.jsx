@@ -1,4 +1,5 @@
 import styles from './Auth.module.css';
+import { FcGoogle } from "react-icons/fc";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
 
 function SignupPage(){
@@ -29,7 +30,7 @@ function SignupPage(){
                 console.log(data);
                 window.location.href = "/login";
             } else {
-                alert(data['err']);
+                alert("Retry");
                 console.log(data);
             }
 
@@ -43,7 +44,7 @@ function SignupPage(){
         <div className={styles.login_body}>
             <div className={styles.login_main}>  
             <div className={styles.form_container}>
-                <form id={styles.login_form}>
+                <form className={styles.login_form}>
                     <h1 className={styles.form_heading}>Sign Up To CropHawk</h1>
                     <p className={styles.form_para}>Sign Up to join our community</p>
 
