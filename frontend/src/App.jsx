@@ -8,6 +8,7 @@ import SignupPage from './SignupPage'
 import FertRecPage from './FertRecPage'
 import CropRecPage from './CropRecPage'
 import CropYieldPage from './CropYieldPage'
+import PageNotFound from './PageNotFound'
 import { UserProvider } from './CONTEXT_PROVIDERS/UserProvider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
   { path: "/news", element: <> <Headder/> <News /> <Footter/> </> },
   { path: "/fertilizer_recommendation", element: <> <Headder/> <FertRecPage /> <Footter/> </> },
   { path: "/crop_recommendation", element: <> <Headder/> <CropRecPage /> <Footter/> </> },
-  { path: "/yield_prediction", element: <> <Headder/> <CropYieldPage /> <Footter/> </> }
+  { path: "/yield_prediction", element: <> <Headder/> <CropYieldPage /> <Footter/> </> },
+  { path: "*", element: <PageNotFound /> }
 ]);
 
 function App() {

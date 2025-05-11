@@ -12,7 +12,7 @@ function Headder() {
                 <div className="dropdown-content">
                     <Link to="/news">News</Link>
                     <Link to="/yield_prediction">Yield Prediction</Link>
-                    <Link to="/crop_rec">Crop Recommendation</Link>
+                    <Link to="/crop_recommendation">Crop Recommendation</Link>
                     <Link to="/fertilizer_recommendation">Fertilizer Recommendation</Link>
                 </div>
             </div>
