@@ -28,7 +28,6 @@ function FertRecPage() {
         const inputs = {
             state: parseInt(document.getElementById("state").value, 10),
             district: parseInt(document.getElementById("district").value, 10),
-            crop_year: parseInt(document.getElementById("crop_year").value, 10),
             crop_type: parseInt(document.getElementById("crop_type").value, 10),
             season: parseInt(document.getElementById("season").value, 10),
             area: parseFloat(document.getElementById("area").value),
@@ -839,12 +838,6 @@ function FertRecPage() {
                         </select>
                     </div>
 
-
-                    <div className={styles.input_container}>
-                        <p className={styles.input_name}>Crop Year</p>
-                        <input id="crop_year" name="crop_year" className={styles.input_value} type="number" />
-                    </div>
-
                     <div className={styles.input_container}>
                         <p className={styles.input_name}>Crop Type</p>
                         <select className={styles.input_value} id="crop_type" name="crop_type">
@@ -936,6 +929,8 @@ function FertRecPage() {
                     {!loading && getFert && <ShowRecc type="Predicted" thing="Yield (in ton)" getFert={getFert} />}
                 </div>
             </div >
+
+            <br />
         </>
     );
 }
