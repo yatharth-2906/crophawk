@@ -6,23 +6,33 @@ import { FaDatabase } from "react-icons/fa";
 import { MdOutlineInsights } from "react-icons/md";
 import { GiFarmer } from "react-icons/gi";
 import { useContextUser } from "./CONTEXT_PROVIDERS/UserProvider";
+import { useTranslation } from "react-i18next";
 
 function HomePage() {
     const { user, handleLogout } = useContextUser();
+
+    const { t } = useTranslation();
 
     return <>
         <main>
             <img id="brand_desc" className="brand_img" src="home_bg.jpg" alt="Brand Image" />
             <section className="brand_desc">
                 <div className="brand_desc_heading">
-                    <h1 id="brand_heead">Revolutionizing Agriculture with AI Driven Smart Solutions</h1>
+                    <h1 id="brand_heead">{t("h1")}</h1>
                 </div>
 
                 <div className="brand_para">
                     <div className="brand_para1">CropHawk leverages edge cutting AI driven technology to tackle agricultural challenges, offering smart solutions for crop recommendation, yield prediction and precision farming insights.</div>
 
                     <div className="brand_para2">
-                        <a className="learn_more_btn_contrast btn_transition" href="#">Learn More</a>
+                        {/* <a className="learn_more_btn_contrast btn_transition" href="https://github.com/yatharth-2906/crophawk-api" target="_blank">Learn More</a> */}
+                        <select className="language_dropdown">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                            <option value="bn">Bengali</option>
+                            <option value="mr">Marathi</option>
+                        </select>
+
                         {!user ? <Link className="sign_up_btn btn_transition" to="/login">Login</Link> : <button className="sign_up_btn btn_transition sign_out" onClick={handleLogout}>Sign Out</button>}
                     </div>
                 </div>
@@ -72,7 +82,7 @@ function HomePage() {
                     <br />
 
                     <div className="soil_health_para_btn">
-                        <Link className="learn_more_btn_contrast btn_transition" to="/learn_more">Learn More</Link>
+                        <Link className="learn_more_btn_contrast btn_transition" to="https://github.com/yatharth-2906/crophawk-api" target="_blank">Learn More</Link>
                         <Link className="learn_more_btn btn_transition" to="/fertilizer_recommendation">Fertilizer Recommendation</Link>
                     </div>
                 </div>
@@ -95,7 +105,7 @@ function HomePage() {
                     <br />
 
                     <div className="soil_health_para_btn">
-                        <Link className="learn_more_btn_contrast btn_transition" to="/learn_more">Learn More</Link>
+                        <Link className="learn_more_btn_contrast btn_transition" to="https://github.com/yatharth-2906/crophawk-api" target="_blank">Learn More</Link>
                         <Link className="learn_more_btn btn_transition" to="/crop_recommendation">Crop Recommendation</Link>
                     </div>
                 </div>
@@ -148,7 +158,7 @@ function HomePage() {
             </section>
 
             <div className="brand_para2">
-                <Link className="learn_more_btn_contrast btn_transition" to="/learn_more">Learn More</Link>
+                <Link className="learn_more_btn_contrast btn_transition" to="https://github.com/yatharth-2906/crophawk-api" target="_blank">Learn More</Link>
                 {!user ? <Link className="sign_up_btn btn_transition" to="/login">Login</Link> : <button className="sign_up_btn btn_transition sign_out" onClick={handleLogout}>Sign Out</button>}
             </div>
 
