@@ -5,7 +5,7 @@ import styles from "./Recommendations.module.css";
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function FertRecPage() {
+function CropYieldPage() {
     const token = Cookies.get('token');
 
     const navigate = useNavigate();
@@ -935,4 +935,4 @@ function FertRecPage() {
     );
 }
 
-export default FertRecPage;
+export default CropYieldPage;

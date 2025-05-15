@@ -267,6 +267,20 @@ li {
     line-height: 1.4em;
 }
 
+.language_dropdown{
+    background-color: var(--primary);
+    border: 2px solid black;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+.language_value{
+    background-color: var(--primary);
+}
+
 .learn_more_btn_contrast {
     background-color: var(--primary);
     border: 2px solid black;

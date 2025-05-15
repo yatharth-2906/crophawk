@@ -34,6 +34,18 @@ export function UserProvider({ children }) {
 
     const backend_url = import.meta.env.VITE_BACKEND_URL;
 
+    if(Cookies.get('language') === undefined) {
+        Cookies.set('language', 'en');
+    }
+
+    const [language, setLanguage] = useState(Cookies.get('language') || 'en');
+
+    const handleLanguageChange = (e) => {
+        const selectedLang = e.target.value;
+        setLanguage(selectedLang);
+        Cookies.set('language', selectedLang);
+    };
+
     useEffect(() => {
         async function fetchUser() {
             if (!token) return;
@@ -57,10 +69,10 @@ export function UserProvider({ children }) {
 
         fetchUser();
     }, [token]);
-    
+
 
     return (
-        <UserContext.Provider value={{ user, setUser, handleLogout, backend_url }}>
+        <UserContext.Provider value={{ user, setUser, handleLogout, backend_url, language, handleLanguageChange }}>
             {children}
         </UserContext.Provider>
     );
