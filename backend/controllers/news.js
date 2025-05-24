@@ -1,5 +1,7 @@
+require('dotenv').config({ path: '../.env' });
+
 async function getNews(req, res) {
-    const news_api_key = "fca1066e3f0c410b8801a5b2e270d0b3";
+    const news_api_key = process.env.NEWS_API_KEY;
     const news_api = `https://newsapi.org/v2/everything?q=farming&sortBy=popularity&pageSize=93&apiKey=${news_api_key}`;
 
     try {
