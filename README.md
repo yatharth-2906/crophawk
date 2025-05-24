@@ -41,7 +41,7 @@ npm run dev
 PORT=8000
 SALT_ROUNDS=10
 JWT_SECRET="your-secret-key"
-NEWS_API_KEY="your-api-key"
+NEWS_API_KEY="your-news-api-key"
 DB_ONLINE="mongodb://127.0.0.1:27017/crophawk"
 ```
 
